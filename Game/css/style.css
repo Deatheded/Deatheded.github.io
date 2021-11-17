@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Estonia', cursive;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: gray;
+    font-size: 50px;
+   
+  }
+  .res {
+    color: green;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial;
+    height: 50px;
+  }
+  .game {
+      background-color:rgb(106, 20, 114) ;
+    width: 360px;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    outline: 3px solid #000;
+  }
+  .field {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+  .field:hover{
+   background-color: white;
+   transition-property: background-color, color;
+   transition-duration: 1s;
+   transition-timing-function: ease-out;
+  }
+  .new-game {
+    border: 1px solid black;
+    color: #fff;
+    background-color: rgb(106, 20, 114);
+     transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    /*padding: 10px 16px;*/
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
+  .new-game:hover{
+      background-color: rgb(7, 7, 7);
+      transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  }
+  #h1{
+      color: blanchedalmond;
+      background-color:rgb(106, 20, 114);
+      border: 3px solid black;
+      border-radius: 10px;
+      cursor: pointer; 
+      transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  }
+
+  #h1:hover{
+     background-color:black ;
+     transition-property: background-color, color;
+     transition-duration: 1s;
+     transition-timing-function: ease-out;
+    
+
+  }
+
+  .active {
+    background: rgba(0, 255, 0, 0.5);
+  }
+  .circle {
+    width: 100%;
+    height: 100%;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    animation: draw 1s forwards;
+  }
+  .cross {
+    width: 100%;
+    height: 100%;
+  
+  }
+  .first {
+    stroke-dasharray: 125;
+    stroke-dashoffset: 125;
+    animation: draw 0.6s forwards;
+  }
+  .second {
+    stroke-dasharray: 125;
+    stroke-dashoffset: 125;
+    animation: draw 0.6s 0.6s forwards;
+  }
+  @keyframes draw {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
