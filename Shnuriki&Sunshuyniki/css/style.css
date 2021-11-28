@@ -36,7 +36,7 @@ font-size: 30px;
 }
 
 .box:hover{
-    background-color: #696969;
+    background-color:grey;
     transition-property: background-color, color;
     transition-duration: .5s;
 }

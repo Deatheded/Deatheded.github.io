@@ -11,7 +11,7 @@ area.addEventListener('click', e => {
         move % 2 === 0 ? e.target.innerHTML = 'Шнурики' : e.target.innerHTML = 'Суншуйники';
         move++; 
         if(move === 9){
-            contetnWrapper.innerHTML = 'Ничья, братья!'
+            contetnWrapper.innerHTML = 'Ничья, братья!!'
             modalResult.style.display = 'block';}
          }
          check();
