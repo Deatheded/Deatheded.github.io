@@ -10,8 +10,11 @@ area.addEventListener('click', e => {
     if(e.target.clasName ='box') {
         move % 2 === 0 ? e.target.innerHTML = 'Шнурики' : e.target.innerHTML = 'Суншуйники';
         move++; 
-        check(); 
-    }
+        if(move === 9){
+            contetnWrapper.innerHTML = 'Ничья, братья!'
+            modalResult.style.display = 'block';}
+         }
+         check();
 })
 
 const check =()=>{

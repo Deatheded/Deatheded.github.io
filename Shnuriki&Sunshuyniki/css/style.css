@@ -35,6 +35,12 @@ font-size: 30px;
     align-items: center;
 }
 
+.box:hover{
+    background-color: #696969;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+}
+
 #modal-result-wrapper{
     width: 100%;
     height: 100%;
